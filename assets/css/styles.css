@@ -1,0 +1,23 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    background-color: #003087; /* Bank’s brand color */
+    color: white;
+}
+.btn-primary {
+    background-color: #003087;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #0059b3;
+}
+.card-footer p {
+    font-size: 0.9em;
+    color: #666;
+}
